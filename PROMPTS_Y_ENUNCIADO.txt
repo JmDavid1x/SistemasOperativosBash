@@ -1,0 +1,78 @@
+================================================================================
+QUIZ MATEMATICO EN BASH - ENUNCIADO DEL PROFESOR
+================================================================================
+
+Su trabajo consiste en desarrollar un script (o serie de scripts) que implementen
+un juego de quiz matemático en Bash. Los requerimientos son los siguientes:
+
+Al iniciar el script, deberá aparecer un menú como el siguiente:
+
+QUIZ MATEMATICO
+1) Problemas de suma
+2) Problemas de resta
+3) Problemas de multiplicacion
+4) Problemas de division
+9) Salir
+Elige una opcion:
+
+El menú debe validar la opción correctamente. El menú debe ejecutarse hasta que
+se elija la opción de salir.
+
+Al elegir la opción de problemas de SUMA, el computador debe elegir dos números
+aleatorios, A y B, entre 0 y 100 cada uno. Luego debe preguntar "¿Cuánto es A + B?"
+y dar al usuario tres oportunidades de dar la respuesta correcta. En caso de dar
+la respuesta correcta, el programa debe felicitar al usuario y regresar al menú
+principal; en caso contrario, debe animarlo a intentarlo de nuevo. Tras agotar
+los tres intentos, el programa debe mostrar la respuesta correcta y regresar al
+menú principal.
+
+Al elegir la opción de problemas de RESTA, el computador debe elegir dos números
+aleatorios, A y B, entre 0 y 100 cada uno. Si A es menor que B, los números
+deben intercambiarse, para que el resultado de la resta siempre sea positivo.
+Luego debe preguntar "¿Cuánto es A – B?" y dar al usuario tres oportunidades
+de responder correctamente. El resto del comportamiento es igual al de los
+problemas de suma.
+
+Al elegir la opción de problemas de MULTIPLICACIÓN, el computador debe elegir
+un número aleatorio A entre 1 y 100, y un número aleatorio B entre 1 y 10.
+Luego debe preguntar "¿Cuánto es A * B?" y dar al usuario tres oportunidades
+de responder correctamente. El resto del comportamiento es igual al de los
+problemas de suma.
+
+Al elegir la opción de problemas de DIVISIÓN, el computador debe elegir un
+número aleatorio A entre 1 y 20, y un número aleatorio B entre 1 y 10. Luego
+debe hacer A=A*B, para garantizar que el resultado de la división sea entero.
+Preguntará entonces "¿Cuánto es A / B?" y dará al usuario tres oportunidades
+de responder correctamente. El resto del comportamiento es igual al de los
+problemas de suma.
+
+Pueden optar por desarrollarlo todo en un solo script, o crear scripts separados
+para cada opción, como más les guste.
+
+Si emplean IA, por favor incluyan en el trabajo los prompts que emplearon.
+Y revisen el código… rebajaré nota si detecto AI slop.
+
+================================================================================
+PROMPTS EMPLEADOS CON IA
+================================================================================
+
+Prompt 1:
+"Hacé un script en bash que implemente un quiz matemático. Necesito que tenga
+un menú principal con las cuatro operaciones básicas y una opción para salir.
+El menú tiene que validar las opciones y repetirse hasta que el usuario quiera
+salir."
+
+Prompt 2:
+"Cada problema debe dar 3 intentos. Si el usuario acierta, que le diga algo
+motivador y vuelva al menú. Si se le acaban los intentos, que le muestre la
+respuesta correcta."
+
+Prompt 3:
+"Para los números aleatorios: suma y resta entre 0 y 100, multiplicación con
+el primer número entre 1 y 100 y el segundo entre 1 y 10. En la división hacé
+que el resultado siempre sea entero."
+
+Prompt 4:
+"Usa una función para no repetir la lógica de los intentos en cada operación."
+
+================================================================================
